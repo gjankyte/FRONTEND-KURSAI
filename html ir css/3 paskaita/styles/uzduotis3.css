@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: beige;
+    height: 50px;
+
+}
+
+footer{
+    background-color: rgb(177, 158, 132);
+    height: 60px;
+}
+
+section{
+    background-color: rgb(236, 220, 197);
+}
+
+.logoIMG{
+    height: 40px;
+    width: auto;
+    margin: 5px 20px;
+    /* margin-top: 5px;
+    margin-left: 20px; */
+}
+
+.logoIMG1{
+    height: 60px;
+    width: auto;
+    margin: 5px 20px;
+    /* margin-top: 5px;
+    margin-left: 20px; */
+}
+
+.logoIMG2{
+    height: 40px;
+    width: auto;
+    margin: 10px 20px;
+}
+
+.logoIMG3{
+    height: auto;
+    width: 600px;
+}
+
+.inlineBlockDisplay{
+    display: inline-block;
+}
+
+.menuListItem{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.menuListItem2{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.noDecor:hover{
+    color: rgb(158, 137, 98);
+}
+
+.noDecor{
+    text-decoration: none;
+}
+
+.noDecor:visited{
+    text-decoration: none;
+
+}
+.menuDiv{
+    width: 90%;
+    float: right;
+}
+
+.menuDiv1{
+    width: 10%;
+    float: right;
+}
+
+
+.menuList{
+    padding: 0;
+}
+
+.sizing{
+    box-sizing: border-box;
+}
+
+.kvadratas{
+    height: 150px;
+    width: 150px;
+    background-color:rgb(206, 190, 160);
+    border: 3px solid rgb(114, 93, 74)
+}
+
+.kvadratas2{
+    height: auto;
+    width: auto;
+    background-color:rgb(206, 190, 160);
+    border: 3px solid rgb(114, 93, 74)
+}
+
+.margin1{
+    margin: 30px 20px;
+}
+
+.pictureSize{
+    width: 150px;
+    height: 150px;
+}
+
+.paddingas{
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+

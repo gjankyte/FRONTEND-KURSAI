@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 paskaita</title>
+    <link href="styles/3paskaita.css" rel="stylesheet">
+</head>
+<body id="home">
+    <header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#failuKeliai">failu keliai</a></li>
+                    <li><a href="#puslapioStruktura"> Puslapio Struktura</a> </li>
+                    <li><a href="#menuInfo"> Menu info </a></li>
+                    <li><a href="#displays"> Displays</a></li>
+                    <li><a href="#modelBox">ModelBox</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="failuKeliai"> <!-- failu keliai-->
+        <img src="./images/3d2a6ce1182dd3b1f0ab30bb9b85e094.jpg" class="strukturosIMG">
+        <p>
+            Nurodant failo varda - nueinama i nurodyta faila
+        </p>
+        <p>
+            Norint nurodyti sekanti veiksma - reikia prasyti "/". 
+        </p>
+        <img src="../1 paskaita/cute-orange-cat-paws-up-over-wall-cartoon-illustration-vector.jpg" height="200px" width="auto">
+        <p>
+            Norint zengti zingsni atgal per aplankalus - reikia prasyti du taskelius "..". 
+        </p>
+        <img src="../1 paskaita/foto.jpg" height="200px" width="auto">
+        </div>
+        <div id="puslapioStruktura"> <!-- puslapio struktura>-->
+            <h1><a href="https://www.internetingishard.com/html-and-css/semantic-html/" target="_blank"> Puslapio struktura </a></h1>
+            <ul>
+                <li> header - puslapio virsus kuriama nurodoma informacija apie puslapi / meniu</li>
+                <li> nav - skirtas aprasyti/kurti meniu</li>
+                <li> section - didzioji puslapio dalis </li>
+                <li> div - mazoji puslapio dalis</li>
+                <li> main - pagrindine puslapio dalis </li>
+                <li> article - main viduje esanti sekcija </li>
+                <li> aside - sonine puslapio sekcija</li>
+                <li> footer - puslapio apacia, kurioje yra ivairi informacija kaip: terms and uses; privacy policy; copyrights; links; partners... </li>
+    
+            </ul>
+            <img src="../2 paskaita/istockphoto-1199173928-1024x1024.jpg" class="strukturosIMG">
+        </div>
+        <div id="menuInfo"> <!-- menu info -->
+            <h1> Menu Info </h1>
+            <p>
+                Kuriant menu naudojamas 'nav' tagas, kurioje viduje yra rikiuotas/nerikiuotas sarasas. To saraso elementu viduje yra nuorodos tagas (a). Kuris nurodo i kazkuria puslapio dali arba kita puslapi.
+            </p>
+            <p>
+                Nuorodos tago (a) atidaromojoje dalyje esantis atributas href nurodo i kur vartotojas turi buti nukeltas paspaudus ant nuorodos.
+            </p>
+            <p>
+                Jeigu atributas nurodo i kazkoki ID (href="#ID_pavadinimas"), tuomet vartotojas yra nukeliamas i puslapio dali kuriai yra suteiktas nurodytas ID (id="ID_pavadinimas"). <br> Pvz.:<a href="#home">puslapio virsus</a>
+            </p>
+            <p>
+                Jeigu href atributas nurodo i kita html faila (href="./aplankas/failas.html"), tuomet vartotojas yra nukeliamas i nurodyta html faila. <br> Pvz.: <a href="./pages/random.html" target="_blank">Kitas puslapis</a>
+            </p>
+        </div>
+        <div id="displays"> <!-- Displays -->
+            <h1>Inline Block ir InLine-Block</h1>
+            <div> <!--Inline-->
+                <h3>Inline</h3>
+                <p>
+                    InLine elementai yra tokie elementai kurie uzima tik tiek vietos ekrane kiek jiems yra reikalinga. Minusas tas kad negalima keisti siu elementu dydziu. Pliusas tas kad jie labai lengvai italpinami tarp kitu informacijos vienetu. <br> Tagu pavydziai: a, span, img, input, button, label, select, textarea, cite..
+                </p>
+                <div class="linijinis kvadratas">linijinis</div>
+                <div class="linijinis kvadratas">linijinis</div>
+                <div class="linijinis kvadratas">linijinis</div>
+            </div>
+            <div> <!-- block-->
+                <h3>Block</h3>
+                <p>
+                    Block elementai yra tokie elementai kurie uzima visa leistina ploti ir neisileidzia kitu elementu i ta pacia eilute. Minusas tas kad uzima visa leistina ploti. Pliusas tas kad galima keisti ju dydi.<br> Tagu pavydziai: h1-h6, p, div, section, main, article, nav, ol, ul, li, blockquote, aside, canvas, table.. 
+                </p>
+                <div class="blockinis kvadratas">blockinis</div>
+                <div class="blockinis kvadratas">blockinis</div>
+                <div class="blockinis kvadratas">blockinis</div>
+
+            <div> <!--Inline block-->
+
+                    <h3> Inline-Block</h3>
+                    <p>
+                        InlineBlock elementai yra tokie elementai kurie pasisavino geriausias Blockiniu ir Linijiniu elementu savybes. Jie uzsima tik kiek vietos jiems reikia, bet ju dydi vis viena galima keisti.
+                    </p>
+                    <div class="linijinisBlockinis kvadratas">LB</div>
+                    <div class="linijinisBlockinis kvadratas">LB</div>
+                    <div class="linijinisBlockinis kvadratas">LB</div>
+                   
+                </div>
+            </div>
+            <div id="modelBox"> <!-- Model box-->
+                <h1>Model box</h1>
+                <p>
+                    Margin - atstumas nuo elemento remeliu iki aplinkiniu elementu remeliu( skirtingu elementu marginai persidengia ties virsum/apacia, ne ties sonais). 
+                </p>
+                <p>
+                    Border - Remelis kuris yra tarp Margin ir Padding.
+                </p>
+                <p>
+                    Padding - atstumas nuo elemento content iki elemento remelio.
+                </p>
+                <p>
+                    Content - elemento turinys. (blockinio elemento turinys, uzims visa leidziama eilute arba nurodyta dydi)
+                </p>
+                <img src="https://i.guim.co.uk/img/media/327e46c3ab049358fad80575146be9e0e65686e7/0_56_1023_614/master/1023.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=1a1f3b8896b95c4590b3b7ae2d3b5d61" class="strukturosIMG">
+            </div>
+            <div>
+                <div class="kvadratas linijinisBlockinis">Pirmas</div>
+                <div class="kvadratas linijinisBlockinis margin1 border1 padding1">antras</div>
+                <div class="kvadratas linijinisBlockinis">Trecias</div>
+            </div>
+            <p>
+                Galime aprasant Margin, Border ir Padding nustatymus 4 skirtingais budais. <br> Vienas matmuo visom 4 krastinem - (margin - 50px) <br> Rasant 2 matmenis - pirmasis priskiriamas virsui ir apaciaia, o 2 priskiriamas sonams (margin: 20px 50px) <br> Rasant 3 matmenis - pirmasis: virsus, 2: sonams, 3: apaciai. (Padding: 30px 20px 10px)<br> Rasant 4 matmenis - jie priskiriami eiles tvarka, pagal laikrodzio rodykle pradedant nuo virsaus. (border-style: solid dashed dotted)
+            </p>
+            <p>
+                Galima nurodyti kuria krastine nori stilizuoti. (border-right-color: orange;)
+            </p>
+        </div>
+        </section>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.notbold{
+    font-weight:normal
+}
+
+.sriftas
+{
+  margin: 0;
+  padding:0;
+  font-size:15px;
+  line-height: 1.5em;
+}
+
+.nerikiuotassarasas{
+    list-style-type:"- ";
+    padding-inline-start: 10px;
+}
+.rikiuotassarasas{
+    padding-inline-start: 10px;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+.centruoti{
+    margin: 0px;
+    text-align: center;
+}

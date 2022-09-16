@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2paskaita - css ivadas</title>
+        <style>
+            p{
+                font-weight: bold;
+                color: rgb(48, 180, 87);
+            }
+            #SugalvotasIdPavadinimas{
+                line-height: 30px;
+                color: orange;
+            }
+            .SekantiKlase{
+                color: deeppink;
+            }
+            .SugalvotasKlasesPavadinimas{
+                border: 5px solid purple; 
+                border-radius: 20%;
+            }
+           
+            
+        </style>
+        <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+
+        <link href="./main.css" rel="stylesheet">  <!-- linkinti html ir css-->
+    </head>
+    <body>
+        <div style="font-family: monospace;"> <!-- Inline CSS-->
+            <h1> InLine Css - linijinis CSS </h1>
+            <p style="color:rgb(71, 52, 155); font-size: 20px; background-color:rgb(203, 203, 243);">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta illo veritatis ipsum corporis fugit odio quis dignissimos qui provident, ullam consequatur inventore iure eligendi, voluptates obcaecati voluptate nemo itaque consequuntur!
+            </p>
+            <p style="color:rgb(167, 93, 97);">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, cupiditate!
+            </p>
+            <p>
+                Linijinis stilizavimas naudojamas kai norima ant greituju pastilizuoti arba testuotis stiliu
+            </p>
+        </div>
+        <div> <!-- Internal CSS -->
+            <h1> Internal CSS - Vidinis CSS </h1>
+            <p id="SugalvotasIdPavadinimas">
+                Vienas ID turi buti priskirtas vienam elementui, Vienas elementas turi tureti tik viena ID.
+            </p>
+            <p class="SugalvotasKlasesPavadinimas SekantiKlase">
+                Viena klase gali buti priskirta daugeliui elementu, vienas elementas gali tureti daugeli klasiu.
+            </p>
+        </div>
+        <div> <!-- external CSS -->
+            <h1> External CSS- Isorinis CSS</h1>
+            <p>
+                <span class="padidintasTekstas">Isorinis stilizavimas</span> naudojamas tvarkingai ir teisingai stilizuojant elementus.
+            </p>
+            <p id="RudasID">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam.
+            </p>
+            <p class="raudonastekstas">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ratione.
+            </p>
+        </div>
+        <div> <!-- Konspektas -->
+            <div> <!-- CSS rasymo budai-->
+                <h1> CSS rasymo budai</h1>
+            <ul>
+                <li> Inline - linijinis rasomas tago viduje naudojant style atributa</li>
+                <li> Internal - Vidinis rasomas style tago viduje</li>
+                <li> External - Isorinis rasomas atskirame CSS faile, kuri reikia prijungti prie HTML naudojant link taga</li>
+            </ul>
+            </div>
+            <div> <!--CSS selectoriai-->
+                <h1> CSS selectoriai</h1>
+                <ul>
+                    <li> element - parenkamas pagal jo pavadinima (p{})</li>
+                    <li> id- sukuriamas susigalvotas id pavadinimas ir priskiriamas vienam elementui (#idPavadinimas{})</li>
+                    <li> class- sukuriamas susigalvotas klases pavadinimas ir priskiriamas bet kokiam kiekiui elementu (.klasesVardas{})</li>
+                </ul>
+            </div>
+            <div> <!-- Stiliai -->
+                <h1> Stiliai </h1>
+                <ul>
+                    <li> color - skirtas pakeisti teksto spalva (color: red) </li>
+                    <li> font-size - skirtas pakeisti teksto dydi (font-size: 20px) </li>
+                    <li> background-color - skirtas pakeisti fono spalva (background-color: aqua)</li>
+                    <li> font-family - skirtas pakeisti teksto srifta (font-family: monospace)</li>
+                    <li> Font-weight - skirta pakeisti teksto storuma(font-weight: bold) </li>
+                    <li> line-height - skirtas pakeisti teksto eilutes auksti (line-height: 20px)</li>
+                    <li> border - skirtas nurodyti remelio stori+tipa+stori (border: 5px dotted/dashed/inline/outline.. solid black)</li>
+                    <li> border-radius - skirtas apvalinti remelio kampus (bordder-radius: px,em,%)</li>
+                    <li> text-align - skirtas lygiuoti teksta (text-align: center)</li>
+                    <li> font-style - skirtas suteikti stiliu tekstui (font-style: italic)</li>
+
+                </ul>
+
+            </div>
+        </div>
+    </body>
+</html>

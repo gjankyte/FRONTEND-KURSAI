@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4paskaita Git ir GitHub</title>
+    <link rel="stylesheet" href="./styles/4paskaita.css">
+    <link rel="icon" href="../4 paskaita/images/croissant.png"> <!-- tab icon pridejimas-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#position">Position</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="position"> <!-- position -->
+            <h1> Position </h1>
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+            <p>
+                Naudojant bet kuria apart Static pozicija, gauname prieeiga prie 5 nauju stiliu: top, left, right, bottom, z-index. <br> Sitie stiliai nurodo per koki atstuma elementas turi buti atitrauktas. <br> Z-index stilius nurodo elemento prioriteta sluoksniuose (esant persidengimui kuris elementas bus virsuje/apacioje)
+            </p>
+           <div> <!--Statine pozicija?-->
+            <p>
+                static/statine pozicija - nieko ypatingo nedaro, net nesuteikia galimybes naudoti top, left, right, bottom, z-index. <br> 
+            </p>
+            <div class="kvadratuKonteineris">
+                <div class="kvadratas statinis">Static 1</div>
+                <div class="kvadratas statinis top20">Static 2</div>
+                <div class="kvadratas statinis">Static 3</div>
+                <div class="kvadratas statinis">Static 4</div>
+            </div>
+           </div>
+           <div> <!--Reliatyvi pozicija-->
+            <p> Relative pozicija - nieko ypatingo nedaro. Bet suteikia galimybe naudoti top/left/right/bottom/z-index <br> elementui suteikus top/left/right/bottom stilius, jis atsitraukia per nurodyta atstuma nuo savo pradines pozicijos.
+            </p>
+           <div class="kvadratuKonteineris">
+            <div class="kvadratas statinis">Relative 1</div>
+            <div class="kvadratas reliatyvus top20 right40">Relative 2</div>
+            <div class="kvadratas reliatyvus left30 zIndex">Relative 3</div>
+            <div class="kvadratas reliatyvus">Relative 4</div>
+        </div>
+           </div>
+           <p>
+            Absolute pozicija - elementas iseina is puslapio tekmes.<br> elementui suteikus top/left/right/bottom stilius, jis atsitraukia per nurodyta atstuma, nuo artimiausio tevinio elemento kuris turi relative/sticky/fixed pozicija. (jeigu neranda, atsitraukia nuo html(ekrano krastu))
+           </p>
+           <div class="kvadratuKonteineris reliatyvus">
+            <div class="kvadratas statinis">Static 1</div>
+            <div class="kvadratas statinis">Static 2</div>
+            <div class="kvadratas absolute zIndex bottom50 ">Absolute3</div>
+            <div class="kvadratas statinis">Static 4</div>
+           </div>
+           <P>
+            Fixed pozicija (fiksuotoji) - elementas iseina is puslapio tekmes ir fiksuojasi nurodytoje arba savo pradineje pozicijoje. Taip pat, jeigu nera nustatytas elemento dydis - elementas sumazeja iki minimalaus dydzio. <br>  Elementui suteikus top/left/right/bottom stilius, jis atsitraukia per nurodyta atstuma, nuo ekrano krastu (html)
+           </P>
+           <div class="kvadratuKonteineris">
+            <div class="kvadratas statinis">Static 1</div>
+            <div class="kvadratas statinis">Static 2</div>
+            <div class="kvadratas fixed top20 zIndex">Fixed 3</div>
+            <div class="kvadratas statinis">Static 4</div>
+            <p>
+                Sticky pozicija - Neiseina is puslapio tekmes. Ekrano krastams priartejus prie jo, jis prilimpa prie ekrano krasto per nurodyta top/right/bottom/left atstuma ir juda kartu su ekranu kol nepasiekia savo tevinio elemento ribu.
+            </p>
+            <div class="kvadratuKonteineris stickyKonteineris">
+                <div class="kvadratas statinis">Static 1</div>
+                <div class="kvadratas statinis">Static 2</div>
+                <div class="kvadratas statinis">Static 3</div>
+                <div class="kvadratas sticky right40 top20">Sticky4</div>
+               </div>
+           </div>
+        </section>
+        <!-- githubas-->
+        <section>
+            <div>
+                <h1> terminalo komandos</h1>
+                <ul>
+                    <li>cd - change directory - pakeisti direktorija 
+                        (vaiksciojimas tarp aplankalu)
+                    </li>
+                    <li>ls - list files and directories - isvardinti failus ir direktorijas.</li>
+                    <li>CTRL C - atsaukia vykdoma veiksma.</li>
+                    <li>TAB - uzbaigia fraze arba pateikia pasiulymus.</li>
+                    <li>clear - nukelia/paslepia terminale rodoma info i virsu.</li>
+                </ul>
+            </div>
+            <div>
+                <p>
+                    git config --global user.name "TavoVardas" <br>
+                    git config --global user.email "emailasgithubo" <br>
+                    git config --global core.editor "code" <br>
+                    git config --global core.autocrlf true <br>
+                    git config --global -e   (atidarys ir parodyt info per editoriu)<br>
+                    git config --help
+                </p>
+            </div>
+            <div> <!-- git komandos-->
+                <ul>
+                    <li>init - initialize - inicializuoti - sukuria git repozirotirje</li>
+                    <li>status - statusas - pateikia informacija apie failus esamoje repozirotirje</li>
+                    <li>add - prideti/paruosti - paruosia failus commit'inimui  ((git add .) prides visus nesekamus failus)</li>
+                    <li> commit - sukuria kodo versija is stage'intu failu</li>
+                </ul>
+                <div>
+                    <p>testing repository</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div style="height: 1500px;"></div>
+    </main>
+</body>
+</html>

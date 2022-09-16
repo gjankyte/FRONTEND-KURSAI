@@ -1,0 +1,46 @@
+body{
+    background-color:bisque;
+}
+
+.nerodyti{
+    display: none;
+}
+
+.strukturosIMG{
+    width: auto;
+    height: 200px;
+}
+
+.blockinis{
+    display: block;
+}
+
+.linijinis{
+    display: inline;
+}
+
+.linijinisBlockinis{
+    display: inline-block;
+}
+
+.kvadratas{
+    height: 100px;
+    width: 100px;
+    background-color:cadetblue;
+    border: 3px dashed rgb(26, 25, 48);
+}
+
+.margin1{
+    margin: 20px 50px;
+}
+
+.border1{
+    border: 15px dotted red;
+    border-style: solid dashed dotted double;
+    border-right-color: orange;
+}
+
+.padding1{
+    padding: 30px 20px 10px;
+}
+

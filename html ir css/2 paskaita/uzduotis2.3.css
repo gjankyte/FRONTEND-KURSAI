@@ -1,0 +1,34 @@
+.zaliasTekstas{
+    color: green;
+}
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+body {
+    background-color:rgb(223, 213, 168);
+    }
+.raudonasTekstas{
+    color: red;
+}
+
+.melynasTekstas{
+    color: blue;
+}
+.centruoti{  
+    display: flex; 
+    justify-content: center; 
+    align-items: center;}
+
+.oranzine{
+    color: orange;
+ }  
+
+ table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
