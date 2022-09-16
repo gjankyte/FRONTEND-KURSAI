@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5 paskaita - selectors</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" href="../5 paskaita/images/corgi.png">
+    <link rel="stylesheet" href="./styles/5paskaita.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <<<iconu linkas>>>-->
+</head>
+<body>
+    <section> <!--icons-->
+        <h1>ikonos</h1>
+        <div> <!-- font awesome-->
+            <h2> font awesome</h2>
+            <p>
+                norint naudoti font awesome ikonas, reikia prisijungti prie jo bibliotekos (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css) <br> Norint panaudoti ikonas, reikia naudoti i arba span tagus ir jiem suteikus class atributa nurodyti fa klase ir norimos ikonos klase. <br> 
+                Norint panaudoti ikonas reikia naudoti i arba span tagus ir jiem suteikus class atrubuta nurodyt fa klase ir content dalyje irasyti ikonos Unicode.
+            </p>
+            <i class="fa fa-gift"></i>
+            <i class="fa fa-bug"></i>
+            <span class="fa fa-ambulance"></span>
+        </div>
+        <div> <!-- bootstrap-->
+            <h1>bootstrap</h1>
+            <p>
+                norint naudoti font bootstrap ikonas, reikia prisijungti prie jo bibliotekos<br>Norint panaudoti ikonas, reikia naudoti i arba span tagus ir jiem suteikus class atributa nurodyti fa klase ir norimos ikonos klase. <br> 
+                Norint panaudoti ikonas reikia naudoti i arba span tagus ir jiem suteikus class atrubuta nurodyt fa klase ir content dalyje irasyti ikonos Unicode.
+            </p>
+            <i class="glyphicon glyphicon-bitcoin"></i>
+            <i class="	glyphicon glyphicon-blackboard"></i>
+            <span class="glyphicon">&#xe216;</span>
+        </div>
+        <div> <!--google icons-->
+            <p>
+                norint naudoti google ikonas, reikia prisijungti prie jo bibliotekos (https://fonts.googleapis.com/icon?family=Material+Icons) <br> Norint panaudoti ikonas, reikia naudoti i arba span tagus ir jiem suteikus class atributa nurodyti material-icons klase ir content dalyje irasyti ikonos pavadinima arba unicode. <br> 
+            </p>
+            <i class="material-icons">ac_unit</i>
+            <i class="material-icons">&#xe60e;</i> <!-- unicode pvz-->
+            <span class="material-icons">add_a_photo</span>
+        </div>
+        <div> <!-- Ikonu Stilizavimas -->
+            <h2>Ikonu stilizavimas</h2>
+            <p>
+                Ikonas reikia stilizuoti kaip tekstinius elementus (ne width+height, bet font-size ir t.t)
+            </p>
+            <i class="fa fa-gift bigIcon"></i>
+            <i class="glyphicon glyphicon-bitcoin redIcon"></i>
+            <i class="material-icons italicIcon">3d_rotation</i>
+        </div>
+    </section>
+    <section> <!--parent / child elementai-->
+        <div>
+            <h2>parent / child elements</h2>       
+            <p>
+                elementas kuris savo viduje turi kitus elementus - tevinis (parent) elementas.<br> Elementas kuris yra kazkokio elemento viduje - vaikinis (child) elementas.
+            </p>
+            <p>
+                Elementas gali tureti viena vieninteli tevini elementa. <br> Elementas gali tureti daugeli vaikiniu elementu.
+            </p>
+            <ul>
+                <li>Pirmas</li>
+                <li>Antras</li>
+                <li>Trecias 
+                    <ul>
+                        <li>trecio pirmas</li>
+                        <li>trevio antras</li>
+                        <li>trecio trecias</li>
+                        <li>trecio ketvirtas</li>
+                    </ul>
+                </li>
+                <li>Ketvirtas</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        
+    </section>
+</body>
+</html>

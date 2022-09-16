@@ -1,0 +1,17 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body{
+    font-family: unset;
+}
+
+.bigIcon{
+    font-size: 50px;
+}
+
+.redIcon{
+    color: rgb(201, 21, 21);
+}
+
+.italicIcon{
+    font-style: italic;
+}
