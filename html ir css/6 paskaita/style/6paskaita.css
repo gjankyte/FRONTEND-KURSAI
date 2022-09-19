@@ -1,0 +1,132 @@
+.kvadratas{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(138, 185, 158);
+    border: 5px solid black;
+    text-align: center;
+    line-height: 100px;
+    font-size: 26px;
+}
+
+.Flexcontaineris{
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    /* flex-direction:column-reverse;
+    flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px 20px;
+}
+
+.flexPirmas{
+    order: 1;
+}
+
+.flexAntras{
+    order: 2;
+}
+
+.flexTrecias{
+    order: 3;
+}
+
+.flexKetvirtas{
+    order: 4;
+}
+
+.alignSelfEnd{
+    align-self: flex-end;
+}
+
+/* pratimai */
+/* simple flex taskas */
+
+.pirmasPratimas{
+    display: flex;
+    gap: 30px;
+}
+
+.flexInflex{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.flexInflex2{
+    display: flex;
+    gap: 30px;
+}
+
+.kvadratai{
+    background-color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.pirmasKvadratas{
+    width: 330px;
+    height: 230px;
+}
+
+.antrasKvadratas{
+    width: 330px;
+    height: 100px;
+}
+
+.treciasKvadratas{
+    width: 150px;
+    height: 100px;
+}
+
+.ketvirtasKvadratas{
+    width: 150px;
+    height: 100px;
+}
+
+/* big task flexas */
+
+.bigTaskContainer{
+    width: 330px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+
+.w66{
+    width: 66%;
+}
+
+.w33{
+    width: 33%;
+}
+
+.h33{
+    height: 33%;
+}
+
+.uzd1{
+    background-image: radial-gradient(circle at center, pink, rgb(164, 187, 221), rgb(130, 87, 143));
+} 
+
+/* .uzd1{
+    background-image: url('../images/b851802399bbdb47b3e0a191718d20f7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.containerTask1{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+}
+
+.containerTask2{
+    display: flex;
+    gap: 1px;
+}
