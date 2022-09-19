@@ -71,3 +71,85 @@ li:hover{
     background-color: rgb(59, 59, 59);
     color: ivory;
 }
+
+.nth_lentele > table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto 50px;
+}
+
+.nth_lentele th, .nth_lentele td{
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* .nth_lentele tbody > tr:nth-child(3){
+    color: cornflowerblue;
+    background-color: darkseagreen;
+} comentavimo trumpinys ctrl 
+2n - even - lyginiai
+2n+1 - kas antram nuo pirmo (nelyginiai)
+/*/  
+
+
+.nth_lentele tbody > tr:nth-child(1n+3){
+    color: cornflowerblue;
+    background-color: darkseagreen;
+}
+
+ 
+/* Stulpeliu zymejimas: 
+Position
+width + height
+background-color
+z-index
+*/
+
+.nth_lentele{
+    box-sizing:border-box;
+  }
+  
+  table {
+    overflow: hidden;
+    display:inline-block;
+  }
+  
+  td, th {
+      border: 1px solid #999;
+      padding: 10px;
+      position: relative;
+  }
+
+  th {
+    background-color:#fff;
+  }
+
+  td:hover::before { 
+      background-color: rgb(207, 152, 218);
+      content: '';  
+      height: 100%;
+      left: -5000px;
+      position: absolute;  
+      top: 0;
+      width: 10000px;   
+      z-index: -2;        
+  }
+  
+  td:hover::after { 
+      background-color: rgb(212, 143, 164);
+      content: '';  
+      height: 10000px;    
+      left: 0;
+      position: absolute;  
+      top: -5000px;
+      width: 100%;
+      z-index: -1;        
+  }
+  
+  tbody {
+    margin:8em;
+  }
+ 
