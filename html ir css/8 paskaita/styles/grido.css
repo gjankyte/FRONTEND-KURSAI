@@ -1,0 +1,43 @@
+.img{
+    max-width: 100%;
+}
+
+.header{
+    background-color: rgb(207, 154, 130);
+    grid-area: header;
+}
+
+.imageblock{
+    background-color: rgb(178, 224, 171);
+    grid-area: imageblock;
+}
+
+.main{
+    background-color: rgb(150, 145, 199);
+    grid-area: main;
+}
+
+.aside{
+    background-color: rgb(206, 207, 117);
+    grid-area: aside;
+}
+
+.footer{
+    background-color: lightgray;
+    grid-area: footer;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas:
+    'header header header'
+    'aside main imageblock'
+    'aside footer footer';
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

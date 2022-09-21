@@ -1,0 +1,248 @@
+/* reset =============*/
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    /* laikinai */
+    padding-bottom: 1000px;
+}
+
+/* common css =============== */
+
+.container{
+    max-width: 1000px;
+    /* border: 1px dashed #000; */
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* helpers css ================ */
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header ============*/
+
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* seniau buvo naudojamas daugiau 
+    position: fixed;
+    width: 100%; */
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 10px rgb(180, 180, 180);
+    
+}
+
+.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.logo span{
+    font-weight: normal;
+}
+
+.navLink{
+    padding: 10px 20px;
+}
+
+.mainHeader a{
+    letter-spacing: 4px;
+}
+
+.mainHeader a:hover{
+    background-color: rgb(177, 177, 177);
+}
+
+/* hero ========= */
+
+.hero{
+    background-color: aquamarine;
+    min-height: 100vh;
+    background: url(../images/architect.jpg) no-repeat center ;
+    background-size: cover;
+}
+
+.heroTitle{
+    color: white;
+    font-size: 40px;
+}
+
+.heroTitle span{
+    font-weight: normal;
+}
+
+/* projects ====================== */
+
+.projects{
+    padding: 40px 30px;
+}
+
+.hr{
+    height: 1px;
+    margin-bottom: 20px;
+    background-color: rgb(230, 244, 245);
+}
+
+.projectsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.project{
+    position: relative;
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.prTitle{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 5px 10px;
+    position: absolute;
+    font-weight: normal;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+/* contacts form ================= */
+
+.formcontainer{
+    background-color: #a2c0be;
+    max-width: 500px;
+    min-height: 500px;
+    padding: 20px 30px;
+}
+
+.input{
+    display: block;
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.input:focus-visible{
+    outline-color: rgb(133, 133, 163);
+}
+
+/* flex containeris */
+.contactForm{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* flex item */
+.inputBlock{
+    
+}
+
+.half{
+    flex-basis: 47%;
+}
+
+.full{
+    flex-basis: 100%;
+}
+
+.textarea{
+    resize: vertical;
+    color: gray;
+}
+
+.btn{
+    font-size: 16px;
+    background-color:#343a40;
+    border-color: #343a40 ;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: white;
+}
+
+.styling{
+    color: #4d6865;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.paddingas{
+    padding-top: 15px;
+}
+
+.contactUsContainer{
+  background: #6c757d;
+  display: flex;
+  color: white;
+  margin:0px;
+}
+
+.contactsContainer{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.contactFormContainer{
+    max-width: 1000px;
+    margin: 0px;
+}
+
+.contactFormItem{
+    background-color: #979c9c;
+    max-width: 600px;
+    min-height: 500px;
+    padding: 20px 30px;
+    
+}
+
+.wT{
+    color: white; 
+    font-size: 14px;
+    text-align: left;
+}
+
+.hT{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.BT{
+    font-weight: bolder;
+}
+/* about */
+.aboutcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.margin0{
+    
+}

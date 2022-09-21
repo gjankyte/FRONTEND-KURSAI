@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/*  our team sekcija =============== */
+
+.ourTeam{
+    padding: 3% 20px;
+    text-align: center;
+}
+
+.teamItem{
+    /* border: 1px solid #000; */
+    text-align: center;
+}
+
+.teamItem img:hover{
+    opacity: 0.75;
+}
+
+.teamItem img{
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.teamName{
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.teamPosition{
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.teamGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* our work section =============== */
+
+.gridContainer{
+    background-color: rgb(54, 54, 54);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    box-sizing: inherit;
+}
+
+.workGrid{
+    grid-area: workGrid;
+    padding: 10px;
+    padding-left: 20px;
+    gap: 15px;
+}
+
+.image{
+  max-width: 100%;
+}
+
+.boxText{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+}
+
+.headingText{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: white;
+}
+
+h4{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+h3{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+div p{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+.customer1{
+    background-color:white;
+    max-width: 300px;
+    grid-area: customer1;
+}
+
+.customer2{
+    background-color: white;
+    max-width: 300px;
+    grid-area: customer2;
+}
+
+.customer3{
+    background-color: white;
+    max-width: 300px;
+    grid-area: customer3;
+}
+
+.layout{
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'workGrid customer1 customer2 customer3'
+}        
+    
+/* pricing section ============ */
+
+.pricingHeader{
+    text-align: center;
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-size: 30px;
+    padding-top: 50px;
+    margin: 10px 0;
+}
+
+.centeredText{
+    text-align: center;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+
+}
+
+.pricingP{
+    font-size: 24px;
+}
+
+.pricingNumber{
+    letter-spacing: 6px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.pricinghead{
+    background-color: hsl(0deg 0% 0%);
+    color: white;
+}
+
+.pricingheadGray{
+    background-color: hsl(0deg 0% 40%);
+    color: white;
+}
+
+.pricingH2{
+    letter-spacing: 4px;
+}
+
+.boldText{
+    font-weight: bold;
+}
+
+.pricingOpacity{
+    opacity: 0.60;
+}
+
+.pricingFont{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.basicTheme{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(214, 214, 214);
+    padding: 0%;
+    text-align: center;
+    list-style: none;
+}
+
+.pricingContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.hovering:hover{
+    box-shadow: #dddddd;
+    background-color: #dddddd;
+}
+
+.ul1{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 16px;
+    border-bottom: 1px solid #dddddd;
+    line-height: 30px;
+}
+
+
+.ulButton1{
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.ulButton{
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: #009688;
+    text-align: center;
+    cursor: pointer;
+}
