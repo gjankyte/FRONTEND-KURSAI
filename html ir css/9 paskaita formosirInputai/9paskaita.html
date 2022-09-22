@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../9 paskaita formosirInputai/styles/9paskaitos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="">SEND US A MESSAGE</h1>
+        <form class="form">
+            <input type="text" class="textInput" placeholder="Full Name">
+            <input type="email" class="textInput" placeholder="E-mail">
+            <input type="tel" class="textInput" placeholder="Phone">
+            <div class="mb-20">
+                <input type="checkbox" id="salygos">
+                <label for="salygos">Terms and conditions</label>
+            </div>
+            <!-- radio buttonai -->
+            <fieldset>
+                <legend>fav color</legend>
+                <input type="radio" id="red" value="red" name="fav color">
+                <label for="red">red</label>
+                <input type="radio" id="green" value="green" name="fav color">
+                <label for="green">green</label>
+                <input type="radio" id="blue" value="blue" name="fav color">
+                <label for="blue">blue</label>
+            </fieldset>
+
+            <label for="bDay">Your b-day</label>
+            <input type="date" class="textInput" id="bDay">
+
+            <input type="number" class="textInput" min="0" max="10" step="0.1" placeholder="number">
+
+            <!-- dropdown/select leisti pasirinkti jusu miesta, vilnius, kaunas, klaipeda, siauliai -->
+            <label for="town">Your town</label>
+            <select name="town" id="town" class="textInput ">
+                <option disabled>Please select town</option>
+                <option value="vilnius">Vilnius</option>
+                <option value="kaunas">Kaunas</option>
+                <option value="klaipeda">Klaipeda</option>
+                <option value="siauliai">Siauliai</option>
+            </select>
+
+            <label for="avatar" class=""></label>
+
+            <textarea class="textInput" placeholder="Your message"></textarea>
+            <button class="submitBtn" type="submit"> <i class="fa fa-paper-plane-o"></i> Send</button>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
