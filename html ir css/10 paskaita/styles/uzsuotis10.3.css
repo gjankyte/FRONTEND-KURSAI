@@ -1,0 +1,101 @@
+@import 'reset.css';
+
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.iconText {
+    font-weight: 500;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image {
+    width: 100px;
+    height: auto;
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(194, 194, 194);
+    border-radius: 5px;
+}
+
+.login {
+    grid-area: login;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(194, 194, 194);
+    border-radius: 5px;
+    height: 50px;
+    padding: 20px;
+    line-height: 1;
+}
+
+.help {
+    grid-area: help;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(194, 194, 194);
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contentTitle {
+    grid-area: contentTitle;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(194, 194, 194);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    color: grey;
+}
+
+.gridContainer {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        'header header'
+        'login contentTitle'
+        'help contentTitle'
+        'help contentTitle'
+        'footer footer';
+}
+
+.container {
+    background-color: rgb(211, 211, 211);
+}
+
+.headerStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+p {
+    padding: 0%;
+    margin: 10px;
+}
+
+/* phone */
+
+@media screen and (max-width: 450px) {
+    .gridContainer {
+        display: grid;
+        grid-template-rows:
+    }
+}

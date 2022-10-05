@@ -1,0 +1,106 @@
+@import 'reset.css';
+
+
+.tableContainer {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgb(172, 73, 172), rgb(216, 145, 184));
+    display: grid;
+    place-items: center;
+}
+
+.mainTable {
+    width: 950px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+thead th {
+    color: white;
+    background-color: #333;
+    padding: 0.5em 0;
+    font-weight: normal;
+}
+
+
+.mainTable tr:nth-child(odd) {
+    background-color: rgb(231, 226, 226);
+}
+
+.mainTable td {
+    padding: 0.5em 0;
+}
+
+.mainTable tbody tr {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* header */
+
+
+.logo {
+    margin-bottom: 0;
+    padding: 0.3em 0;
+}
+
+.mainHeader .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainNav>ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.unlisted {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navLink {
+    padding: 0.5em 1.2em;
+    background-color: rgb(247, 251, 254);
+}
+
+.navLink:hover {
+    background-color: aliceblue;
+}
+
+/* HOVER sub menu */
+
+.hasSubMenu {
+    position: relative;
+}
+
+.hasSubMenu::after {
+    content: '\f078';
+    font-family: 'FontAwesome';
+    font-size: small;
+}
+
+.hasSubMenu:hover::after {
+    transform: rotate(180deg);
+}
+
+.hasSubMenu:hover .subMenu {
+    /* display: block; */
+    transform: scaleY(1) translateY(0);
+    opacity: 1;
+}
+
+.subMenu {
+    /* display: none; */
+    transform: scaleY(0);
+    transform-origin: top;
+    /* transform: translateX(500px); */
+    /* opacity: 0; */
+    transition: transform 0.2s, opacity 0.4s;
+    position: absolute;
+    min-width: 140px;
+    left: 0;
+    top: 100%;
+}

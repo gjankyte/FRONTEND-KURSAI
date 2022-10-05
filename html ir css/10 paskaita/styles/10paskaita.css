@@ -1,0 +1,65 @@
+@import 'reset.css';
+
+
+
+header {
+    background-color: cornflowerblue;
+    font-size: 100px;
+}
+
+main {
+    background-color: rgb(143, 180, 168);
+    flex-basis: 70%;
+
+}
+
+aside {
+    background-color: darkkhaki;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: darkslateblue;
+}
+
+
+.element {
+    min-height: 150px;
+}
+
+
+
+/* media queries ========= */
+
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    /* cia parasytos taisykles galioja nuo 768px ir daugiau  */
+
+    main {
+        background-color: rgb(143, 180, 168);
+        flex-basis: 50%;
+    }
+
+    header {
+        font-size: 50px;
+    }
+}
+
+/* mobile view */
+
+@media screen and (max-width: 375px) {
+    .flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    main {
+        background-color: rgb(194, 241, 202);
+        flex-basis: 50%;
+    }
+
+    header {
+        font-size: 30px;
+    }
+}

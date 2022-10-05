@@ -1,0 +1,15 @@
+@import 'reset.css';
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: auto 30%;
+    gap: 20px;
+}
+
+
+aside.card {
+    border: 2px solid rgb(201, 58, 58);
+    background-color: rgb(241, 177, 198);
+    max-height: 300px;
+    overflow: hidden;
+}

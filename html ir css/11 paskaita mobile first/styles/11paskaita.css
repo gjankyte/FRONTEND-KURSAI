@@ -1,0 +1,73 @@
+@import 'reset.css';
+
+html {
+    font-size: 100%;
+}
+
+.post {
+    margin-bottom: 1rem;
+}
+
+.post h3 {
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* tablet taisykles */
+
+    html {
+        font-size: 120%;
+    }
+
+    .card {
+        background-color: darkkhaki;
+    }
+
+    .post_1 {
+        grid-area: one;
+    }
+
+    .post_2 {
+        grid-area: two;
+    }
+
+    .post_3 {
+        grid-area: three;
+    }
+
+    .post_4 {
+        grid-area: four;
+    }
+
+    .gridContainer {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            'one one one one'
+            'two two three four';
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* screen taisykles */
+
+    html {
+        font-size: 130%;
+    }
+
+    .card {
+        background-color: rgb(116, 129, 117);
+    }
+
+    .gridContainer {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            'one one two two'
+            'one one three four';
+    }
+}

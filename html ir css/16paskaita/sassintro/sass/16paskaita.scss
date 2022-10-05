@@ -1,0 +1,39 @@
+@use 'vars' as v;
+
+@import 'reset';
+
+
+/* body */
+
+body {
+    font-family: v.$main-font;
+
+.container{
+    h1{
+        color: v.$primary-color;
+        font-size: 3rem;
+        font-weight: normal;
+    }
+
+    h3{
+        font-size: 1.2rem;
+        color: v.$secondary-color;
+    }
+}
+
+.boxes{
+    min-height: 400px;
+    border: 1px solid v.$primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(144, 150, 118);
+        border: 1px solid v.$secondary-color;
+    }
+}
+}
